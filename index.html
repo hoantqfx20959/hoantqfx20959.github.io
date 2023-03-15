@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
   <head>
     <meta charset="UTF-8" />
     <meta
@@ -11,837 +11,658 @@
       content="width=device-width, initial-scale=1.0"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
+      href="css/font.css"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
-    />
-
     <link
       rel="stylesheet"
       href="css/style.css"
     />
-    <title>Frontend Bootscamp</title>
+    <link
+      rel="stylesheet"
+      href="css/laptop.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      href="css/mobile.css"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Assignment 03</title>
   </head>
   <body>
-    <!-- Navbar -->
-    <nav
-      class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top"
+    <div
+      id="header"
+      class="d-flex flex-column mx-5"
     >
-      <div class="container">
-        <a
-          href="#"
-          class="navbar-brand"
-          >Frontand Bootscamp</a
-        >
-
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navmenu"
-        >
-          <span class="navbar-toggler-icon">
-          </span>
-        </button>
-
+      <div
+        id="banner"
+        class="position-relative p-0"
+      >
         <div
-          class="collapse navbar-collapse"
-          id="navmenu"
+          class="text-white position-absolute top-50 start-50 translate-middle text-center"
         >
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a
-                href="#learn"
-                class="nav-link"
-                >What You'll Learn</a
-              >
+          <h1 class="m-0">Trần Quốc Hoàn</h1>
+          <span>Full Stack Developer</span>
+        </div>
+      </div>
+      <div class="position-relative">
+        <nav
+          id="nav"
+          class="navbar p-0"
+        >
+          <div
+            class="nav-item col d-flex align-items-center justify-content-center border border-light py-2"
+          >
+            <i class="info-icon icon-user-1"></i>
+            <a
+              href="#info"
+              class="nav-link px-0"
+              >Thông tin</a
+            >
+          </div>
+
+          <div
+            class="nav-item col d-flex align-items-center justify-content-center border border-light py-2"
+          >
+            <i
+              class="info-icon icon-doc-text-inv"
+            ></i>
+            <a
+              href="#background"
+              class="nav-link px-0"
+              >Lý lịch</a
+            >
+          </div>
+
+          <div
+            id="avatar"
+            class="col"
+          >
+            <img
+              src="images/2.jpg"
+              alt="avatar"
+              class="avatar"
+            />
+          </div>
+
+          <div
+            class="nav-item col d-flex align-items-center justify-content-center border border-light py-2"
+          >
+            <i
+              class="info-icon icon-mail-alt"
+            ></i>
+            <a
+              href="#certificate"
+              class="nav-link px-0"
+              >Chứng chỉ</a
+            >
+          </div>
+
+          <div
+            class="nav-item col d-flex align-items-center justify-content-center border border-light py-2"
+          >
+            <i class="info-icon icon-star-1"></i>
+            <a
+              href="#project"
+              class="nav-link px-0"
+              >Dự Án</a
+            >
+          </div>
+        </nav>
+      </div>
+      <div
+        id="info"
+        class="row p-0 m-0"
+      >
+        <div class="col bg-light px-5">
+          <h2 class="my-4">
+            Mục tiêu nghề nghiệp
+          </h2>
+          <p>
+            Là một sinh viên đang theo học chương
+            trình chứng chỉ Doanh Nghiệp của
+            FUNiX. Em sẽ cố gắng nắm vững kiến
+            thức. Sau khi hoàn thành khóa học, em
+            mong muốn mình sẽ được làm việc với vị
+            trí Fullstack Developer, có thể vận
+            dụng những kiến thức đã được trau dồi
+            và không ngừng học hỏi để phát triển
+            bản thân, cũng như hoàn thành tốt nhất
+            công việc được giao.
+          </p>
+        </div>
+        <div class="col bg-light-1 px-5">
+          <h2 class="my-4">Thông tin cá nhân</h2>
+          <ul class="px-0 mx-0">
+            <li><span>Giới tính</span> : Nam</li>
+            <li>
+              <span>Ngày sinh</span> : 11/04/1992
             </li>
-            <li class="nav-item">
-              <a
-                href="#questions"
-                class="nav-link"
-                >Questions</a
-              >
+            <li>
+              <span>Điện thoại</span> : (+84)
+              393666645
             </li>
-            <li class="nav-item">
-              <a
-                href="#instructors"
-                class="nav-link"
-                >Instructors</a
-              >
+            <li>
+              <span>Email</span> :
+              hoantqfx20959@funix.edu.vn
+            </li>
+            <li>
+              <span>Địa chỉ</span> : Hà Nội, Việt
+              Nam
+            </li>
+            <li>
+              <span>Website</span> :
+              https://abc.tech
             </li>
           </ul>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Showcase -->
-    <section
-      class="bg-dark text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start"
-    >
-      <div class="container">
-        <div
-          class="d-sm-flex align-items-center justify-content-between"
-        >
-          <div>
-            <h1>
-              Become a
-              <span class="text-warning"
-                >Web Developer</span
-              >
-            </h1>
-            <p class="lead my-4">
-              We focus on teaching our students
-              the fundamentals of the latest and
-              greatest technologies to prepare
-              them for their first dev role
-            </p>
-            <button
-              class="btn btn-primary btn-lg"
-              data-bs-toggle="modal"
-              data-bs-target="#enroll"
-            >
-              Start The Enrollment
-            </button>
-          </div>
-          <img
-            class="img-fluid w-50 d-none d-sm-block"
-            src=""
-            alt="showcase"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section class="bg-primary textlight p-5">
-      <div class="container">
-        <div
-          class="d-md-flex justify-content-between align-items-center"
-        >
-          <h3 class="mb-3 mb-md-0">
-            Sign Up For Our Newsietter
-          </h3>
-
-          <div class="input-group news-input">
-            <input
-              type="text"
-              class="form-control"
-              placeholder="Enter Email"
-            />
-            <button
-              class="btn btn-dark btn-lg"
-              type="button"
-            >
-              Button
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Boxes -->
-    <section class="p-5">
-      <div class="container">
-        <div class="row text-center g-4">
-          <div class="col-md">
-            <div class="card bg-dark text-light">
-              <div class="card-body textcenter">
-                <div class="h1 mb-3">
-                  <i class="bi bi-laptop"></i>
-                </div>
-                <h3 class="card-tetle mb-3">
-                  Virtual
-                </h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit.
-                  Perspiciatis sint illum id,
-                  consequatur debitis veniam.
-                </p>
-                <a
-                  href="#"
-                  class="btn btn-primary"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div
-              class="card bg-secondary text-light"
-            >
-              <div class="card-body textcenter">
-                <div class="h1 mb-3">
-                  <i
-                    class="bi bi-person-square"
-                  ></i>
-                </div>
-                <h3 class="card-tetle mb-3">
-                  Hybrid
-                </h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit.
-                  Perspiciatis sint illum id,
-                  consequatur debitis veniam.
-                </p>
-                <a
-                  href="#"
-                  class="btn btn-dark"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-          <div class="col-md">
-            <div class="card bg-dark text-light">
-              <div class="card-body textcenter">
-                <div class="h1 mb-3">
-                  <i class="bi bi-people"></i>
-                </div>
-                <h3 class="card-tetle mb-3">
-                  In Person
-                </h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit.
-                  Perspiciatis sint illum id,
-                  consequatur debitis veniam.
-                </p>
-                <a
-                  href="#"
-                  class="btn btn-primary"
-                  >Read More</a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Learn Sections -->
-    <section
-      id="learn"
-      class="p-5"
-    >
-      <div
-        class="row align-items-center justify-content-between"
-      >
-        <div class="col-md">
-          <img
-            src=""
-            alt="fundamentals"
-            class="img-fluid"
-          />
-        </div>
-        <div class="col-md p5">
-          <h2>Learn The Fundamentals</h2>
-          <p class="lead">
-            Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Quae
-            quod laboriosam, dolorum eveniet ad
-            ducimus sit labore a, obcaecati,
-            delectus assumenda. Magnam, nihil.
-            Obcaecati doloremque fugiat
-            repudiandae quo. Molestiae, nisi?
-          </p>
-          <a
-            href="#"
-            class="btn btn-light mt-3"
-          >
-            <i class="bi bi-chevron-right"></i>
-            Read More
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section
-      id="learn"
-      class="p-5 bg-dark text-light"
-    >
-      <div
-        class="row align-items-center justify-content-between"
-      >
-        <div class="col-md p5">
-          <h2>Learn React</h2>
-          <p class="lead">
-            Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Quae
-            quod laboriosam, dolorum eveniet ad
-            ducimus sit labore a, obcaecati,
-            delectus assumenda. Magnam, nihil.
-            Obcaecati doloremque fugiat
-            repudiandae quo. Molestiae, nisi?
-          </p>
-          <a
-            href="#"
-            class="btn btn-light mt-3"
-          >
-            <i class="bi bi-chevron-right"></i>
-            Read More
-          </a>
-        </div>
-        <div class="col-md">
-          <img
-            src=""
-            alt="react"
-            class="img-fluid"
-          />
-        </div>
-      </div>
-    </section>
-
-    <!-- Question Accordion -->
-    <section
-      id="questions"
-      class="p-5"
-    >
-      <div class="container">
-        <h2 class="text-center mb-4">
-          Frequently Asked Question
-        </h2>
-        <div class="accordion accordion-flush">
-          <!-- Item 1 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-one"
-              >
-                Where exactly are you located?
-              </button>
-            </h2>
-            <div
-              id="question-one"
-              class="accordion-collapse collapse"
-              data-bs-parent="#question"
-            >
-              <div class="accordion-body">
-                Lorem ipsum dolor sit amet
-                consectetur adipisicing elit.
-                Minus corrupti praesentium
-                doloribus quo quaerat, temporibus,
-                assumenda necessitatibus illo qui
-                deserunt delectus doloremque rem!
-                Quas, voluptatum culpa debitis
-                illo quam adipisci!
-              </div>
-            </div>
-          </div>
-          <!-- Item 2 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-tow"
-              >
-                How much does it cost to attend?
-              </button>
-            </h2>
-            <div
-              id="question-tow"
-              class="accordion-collapse collapse"
-              data-bs-parent="#question"
-            >
-              <div class="accordion-body">
-                Lorem ipsum dolor sit amet
-                consectetur adipisicing elit.
-                Minus corrupti praesentium
-                doloribus quo quaerat, temporibus,
-                assumenda necessitatibus illo qui
-                deserunt delectus doloremque rem!
-                Quas, voluptatum culpa debitis
-                illo quam adipisci!
-              </div>
-            </div>
-          </div>
-          <!-- Item 3 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-three"
-              >
-                What do I need to Know?
-              </button>
-            </h2>
-            <div
-              id="question-three"
-              class="accordion-collapse collapse"
-              data-bs-parent="#question"
-            >
-              <div class="accordion-body">
-                Lorem ipsum dolor sit amet
-                consectetur adipisicing elit.
-                Minus corrupti praesentium
-                doloribus quo quaerat, temporibus,
-                assumenda necessitatibus illo qui
-                deserunt delectus doloremque rem!
-                Quas, voluptatum culpa debitis
-                illo quam adipisci!
-              </div>
-            </div>
-          </div>
-          <!-- Item 4 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-four"
-              >
-                How Do I sign up?
-              </button>
-            </h2>
-            <div
-              id="question-four"
-              class="accordion-collapse collapse"
-              data-bs-parent="#question"
-            >
-              <div class="accordion-body">
-                Lorem ipsum dolor sit amet
-                consectetur adipisicing elit.
-                Minus corrupti praesentium
-                doloribus quo quaerat, temporibus,
-                assumenda necessitatibus illo qui
-                deserunt delectus doloremque rem!
-                Quas, voluptatum culpa debitis
-                illo quam adipisci!
-              </div>
-            </div>
-          </div>
-          <!-- Item 5 -->
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button
-                class="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#question-five"
-              >
-                Do you help me find a job?
-              </button>
-            </h2>
-            <div
-              id="question-five"
-              class="accordion-collapse collapse"
-              data-bs-parent="#question"
-            >
-              <div class="accordion-body">
-                Lorem ipsum dolor sit amet
-                consectetur adipisicing elit.
-                Minus corrupti praesentium
-                doloribus quo quaerat, temporibus,
-                assumenda necessitatibus illo qui
-                deserunt delectus doloremque rem!
-                Quas, voluptatum culpa debitis
-                illo quam adipisci!
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      id="instructors"
-      class="p-5 bg-primary"
-    >
-      <div class="container">
-        <h2 class="text-center text-white">
-          Our Instructors
-        </h2>
-        <p
-          class="lead text-center text-white mb-5"
-        >
-          Our instructors all have 5+ years
-          working as a web developer in the
-          industry
-        </p>
-        <div class="row g-4">
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://randomuser.me/api/portraits/men/11.jpg"
-                  alt=""
-                  class="rounded-circle mb-3"
-                />
-                <h3 class="card-title mb-3">
-                  John Doe
-                </h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit.
-                  Necessitatibus, eius blanditiis
-                  consequuntur assumenda deserunt
-                  adipisci exercitationem velit
-                  natus dolores reprehenderit
-                  repellendus hic, dolore culpa
-                  incidunt libero, vitae facere
-                  architecto sapiente.
-                </p>
-                <a href="#"
-                  ><i
-                    class="bi bi-twitter text-dark mx-1"
-                  ></i
-                ></a>
-                <a href="#"
-                  ><i
-                    class="bi bi-facebook text-dark mx-1"
-                  ></i
-                ></a>
-                <a href="#"
-                  ><i
-                    class="bi bi-linkedin text-dark mx-1"
-                  ></i
-                ></a>
-                <a href="#"
-                  ><i
-                    class="bi bi-instagram text-dark mx-1"
-                  ></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://randomuser.me/api/portraits/women/11.jpg"
-                  alt=""
-                  class="rounded-circle mb-3"
-                />
-                <h3 class="card-title mb-3">
-                  Jane Doe
-                </h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit.
-                  Necessitatibus, eius blanditiis
-                  consequuntur assumenda deserunt
-                  adipisci exercitationem velit
-                  natus dolores reprehenderit
-                  repellendus hic, dolore culpa
-                  incidunt libero, vitae facere
-                  architecto sapiente.
-                </p>
-                <a href="#"
-                  ><i
-                    class="bi bi-twitter text-dark mx-1"
-                  ></i
-                ></a>
-                <a href="#"
-                  ><i
-                    class="bi bi-facebook text-dark mx-1"
-                  ></i
-                ></a>
-                <a href="#"
-                  ><i
-                    class="bi bi-linkedin text-dark mx-1"
-                  ></i
-                ></a>
-                <a href="#"
-                  ><i
-                    class="bi bi-instagram text-dark mx-1"
-                  ></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://randomuser.me/api/portraits/men/12.jpg"
-                  alt=""
-                  class="rounded-circle mb-3"
-                />
-                <h3 class="card-title mb-3">
-                  Steve Smith
-                </h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit.
-                  Necessitatibus, eius blanditiis
-                  consequuntur assumenda deserunt
-                  adipisci exercitationem velit
-                  natus dolores reprehenderit
-                  repellendus hic, dolore culpa
-                  incidunt libero, vitae facere
-                  architecto sapiente.
-                </p>
-                <a href="#"
-                  ><i
-                    class="bi bi-twitter text-dark mx-1"
-                  ></i
-                ></a>
-                <a href="#"
-                  ><i
-                    class="bi bi-facebook text-dark mx-1"
-                  ></i
-                ></a>
-                <a href="#"
-                  ><i
-                    class="bi bi-linkedin text-dark mx-1"
-                  ></i
-                ></a>
-                <a href="#"
-                  ><i
-                    class="bi bi-instagram text-dark mx-1"
-                  ></i
-                ></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <div class="card bg-light">
-              <div class="card-body text-center">
-                <img
-                  src="https://randomuser.me/api/portraits/women/12.jpg"
-                  alt=""
-                  class="rounded-circle mb-3"
-                />
-                <h3 class="card-title mb-3">
-                  Sarah Smith
-                </h3>
-                <p class="card-text">
-                  Lorem ipsum dolor sit amet
-                  consectetur adipisicing elit.
-                  Necessitatibus, eius blanditiis
-                  consequuntur assumenda deserunt
-                  adipisci exercitationem velit
-                  natus dolores reprehenderit
-                  repellendus hic, dolore culpa
-                  incidunt libero, vitae facere
-                  architecto sapiente.
-                </p>
-                <a href="#"
-                  ><i
-                    class="bi bi-twitter text-dark mx-1"
-                  ></i
-                ></a>
-                <a href="#"
-                  ><i
-                    class="bi bi-facebook text-dark mx-1"
-                  ></i
-                ></a>
-                <a href="#"
-                  ><i
-                    class="bi bi-linkedin text-dark mx-1"
-                  ></i
-                ></a>
-                <a href="#"
-                  ><i
-                    class="bi bi-instagram text-dark mx-1"
-                  ></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Contact & Map -->
-    <section class="p-5">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-md">
-            <h2 class="text-center mb-4">
-              Contact Info
-            </h2>
-            <ul
-              class="list-group list-group-flush lead"
-            >
-              <li class="list-group-item">
-                <span class="fw-bold"
-                  >Enrollment Phone:</span
-                >
-                (555) 555-5555
-              </li>
-              <li class="list-group-item">
-                <span class="fw-bold"
-                  >Student Phone:</span
-                >
-                (333) 333-3333
-              </li>
-              <li class="list-group-item">
-                <span class="fw-bold"
-                  >Enrollment Email:</span
-                >
-                enrollment@frontend.test
-              </li>
-              <li class="list-group-item">
-                <span class="fw-bold"
-                  >Student Email:</span
-                >
-                student@frontend.test
-              </li>
-            </ul>
-          </div>
-          <div class="col-md">
-            <div id="map"></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Footer -->
-    <footer
-      class="p-5 bg-dark text-white text-center position-relative"
-    >
-      <div class="container">
-        <p class="lead">
-          Copyright &copy: 2021 Frontend Bootcamp
-        </p>
-        <a
-          href="#"
-          class="position-absolute bottom-0 end-0 p-5"
-          ><i class="bi bi-arrow-up-circle h1"></i
-        ></a>
-      </div>
-    </footer>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="enroll"
-      tabindex="-1"
-      aria-labelledby="enrollLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5
-              class="modal-title"
-              id="enrollLabel"
-            >
-              Modal title
-            </h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <p class="lead">
-              Fill out this form and we will get
-              back to you
-            </p>
-            <form>
-              <div class="mb-3">
-                <label
-                  for="first-name"
-                  class="col-form-label"
-                  >First Name:</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="first-name"
-                />
-              </div>
-              <div class="mb-3">
-                <label
-                  for="last-name"
-                  class="col-form-label"
-                  >Last Name:</label
-                >
-                <input
-                  type="text"
-                  class="form-control"
-                  id="last-name"
-                />
-              </div>
-              <div class="mb-3">
-                <label
-                  for="email"
-                  class="col-form-label"
-                  >Email:</label
-                >
-                <input
-                  type="email"
-                  class="form-control"
-                  id="email"
-                />
-              </div>
-              <div class="mb-3">
-                <label
-                  for="phone"
-                  class="col-form-label"
-                  >Phone:</label
-                >
-                <input
-                  type="tel"
-                  class="form-control"
-                  id="phone"
-                />
-              </div>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button
-              type="button"
-              class="btn btn-primary"
-            >
-              Submit
-            </button>
+          <div class="pb-3">
+            <i class="icon-twitter"></i>
+            <i class="icon-facebook"></i>
+            <i class="icon-gplus"></i>
+            <i class="icon-linkedin"></i>
           </div>
         </div>
       </div>
     </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
+    <div
+      id="background"
+      class="d-grid gap-3 p-5 mx-5"
+    >
+      <div class="col border">
+        <div
+          class="d-flex align-items-center justify-content-around my-3"
+        >
+          <h2>Kinh Nghiệm</h2>
+          <i
+            class="ic-toolbox h1 text-black-50"
+          ></i>
+        </div>
+        <div class="py-3">
+          <ul>
+            <li class="pb-3">
+              <h5>Công ty Arnest1</h5>
+              <p>
+                <em>02/2017 - 02/2021</em>
+              </p>
+              <p>
+                - Xây dựng tiến độ dựa trên thiết
+                kế và yêu cầu khách hàng.
+              </p>
+              <p>
+                - Bàn giao thiết kế, mặt bằng cho
+                đơn vị thi công..
+              </p>
+              <p>
+                - Quản lý tiến độ, vật tư, an toàn
+                khi thi công.
+              </p>
+            </li>
+            <li>
+              <h5>Web Designer - Công ty X</h5>
+              <p><em>0000 - 0000</em></p>
+              <p>
+                - Thiết kế Website dự trên yêu cầu
+                của khách hàng.
+              </p>
+              <p>
+                - Sử dụng các công cụ: Figma,
+                Canva, PTS.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col border">
+        <div
+          class="d-flex align-items-center justify-content-around my-3"
+        >
+          <h2>Học Vấn</h2>
+          <i
+            class="ic-pencil h1 text-black-50"
+          ></i>
+        </div>
+        <div class="py-3">
+          <ul>
+            <li class="pb-3">
+              <h5>FUNiX</h5>
+              <p>
+                <em
+                  >02/2023 -
+                  <span class="bg-1"
+                    >Hiện tại</span
+                  ></em
+                >
+              </p>
+              <p>
+                - Chứng chỉ doanh nghiệp nhánh
+                Fullstack
+              </p>
+              <p>- GPA:</p>
+            </li>
+            <li class="pb-3">
+              <h5>Cử nhân ACC</h5>
+              <p><em>07/2015 - 04/2017</em></p>
+              <p>- Chuyên ngành: Tiếng Nhật</p>
+              <p>- GPA: N3</p>
+            </li>
+            <li>
+              <h5>Cử nhân CĐ XD CTĐT</h5>
+              <p><em>09/2010 - 04/2013</em></p>
+              <p>
+                - Chuyên ngành: Kinh tế xây dựng
+              </p>
+              <p>- GPA:</p>
+            </li>
+          </ul>
+        </div>
+      </div>
 
-    <script>
-      let map;
-      function initMap() {
-        map = new google.maps.Map(
-          document.getElementById("map"),
-          {
-            center: {
-              lat: 20.45049848089903,
-              lng: 106.35126185767145,
-            },
-            zoom: 18,
-          }
-        );
-      }
-      window.initMap = initMap;
-    </script>
+      <div class="col border">
+        <div
+          class="d-flex align-items-center justify-content-around my-3"
+        >
+          <h2>Hoạt Động</h2>
+          <i
+            class="ic-toolbox h1 text-black-50"
+          ></i>
+        </div>
+        <div class="py-3">
+          <ul>
+            <li class="pb-3">
+              <h5>FPT Edu Hackathon</h5>
+              <p><em>0000 - 0000</em></p>
+              <p>- Giải</p>
+              <p>- Đề tài:</p>
+            </li>
+            <li>
+              <h5>Câu lạc bộ Z</h5>
+              <p><em>0000 - 0000</em></p>
+              <p>- Trưởng ban chuyên môn</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col border">
+        <div
+          class="d-flex align-items-center justify-content-around my-3"
+        >
+          <h2>Sở Thích</h2>
+          <i
+            class="ic-telescope h1 text-black-50"
+          ></i>
+        </div>
+        <div
+          id="interest"
+          class="d-flex align-items-center justify-content-center text-center gap-2"
+        >
+          <div>
+            <i class="ic-megaphone h3"></i>
+            <p>Âm nhạc</p>
+          </div>
+          <div>
+            <i class="ic-strategy h3"></i>
+            <p>Chơi game</p>
+          </div>
+          <div>
+            <i class="ic-hotairballoon h3"></i>
+            <p>Du lịch</p>
+          </div>
+          <div>
+            <i class="ic-basket h3"></i>
+            <p>Nấu ăn</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col border">
+        <div
+          class="d-flex align-items-center justify-content-around my-3"
+        >
+          <h2>Ngôn Ngữ</h2>
+          <i class="ic-mic h1 text-black-50"></i>
+        </div>
+        <div class="ps-3 pb-3">
+          <p>Tiếng Anh - IELTS</p>
+          <span class="job-span-1"></span>
+          <span class="job-span-2"></span>
+          <span class="job-span-2"></span>
+          <p>Tiếng Nhật - JNPT N3</p>
+          <span class="job-span-1"></span>
+          <span class="job-span-2"></span>
+          <span class="job-span-2"></span>
+        </div>
+      </div>
+
+      <div class="col border">
+        <div
+          class="d-flex align-items-center justify-content-around my-3"
+        >
+          <h2>Kỹ Năng</h2>
+          <i
+            class="ic-tools-2 h1 text-black-50"
+          ></i>
+        </div>
+        <div class="ps-3 pb-3">
+          <p>HTML/CSS: Studing</p>
+          <span class="job-span-1"></span>
+          <span class="job-span-2"></span>
+          <span class="job-span-2"></span>
+          <p>Javascript: Studing</p>
+          <span class="job-span-1"></span>
+          <span class="job-span-2"></span>
+          <span class="job-span-2"></span>
+          <p>NodeJS: Studing</p>
+          <span class="job-span-1"></span>
+          <span class="job-span-2"></span>
+          <span class="job-span-2"></span>
+          <p>Bootstrap: Studing</p>
+          <span class="job-span-1"></span>
+          <span class="job-span-2"></span>
+          <span class="job-span-2"></span>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="certificate"
+      class="bg-light p-5 mx-5"
+    >
+      <h2>Chứng chỉ - Giải thưởng</h2>
+      <div
+        id="certificate-div"
+        class="d-grid gap-5"
+      >
+        <div
+          class="d-flex position-relative certificate"
+        >
+          <img
+            src="images/Cert_DBI.png"
+            alt="chung-chi-giai-thuong"
+            class=""
+          />
+          <div>
+            <h6>
+              CHỨNG CHỈ LẬP TRÌNH WEB - FUNiX
+            </h6>
+            <ul class="ps-0">
+              <li>
+                Chứng chỉ thuộc chương trình CCDN
+              </li>
+              <li>GPA:</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="d-flex position-relative certificate"
+        >
+          <img
+            src="images/Cert_PRF.png"
+            alt="chung-chi-giai-thuong"
+            class=""
+          />
+          <div>
+            <h6>
+              CHỨNG CHỈ LẬP TRÌNH JAVASCRIP -
+              FUNiX
+            </h6>
+            <ul class="ps-0">
+              <li>
+                Chứng chỉ thuộc chương trình CCDN
+              </li>
+              <li>GPA:</li>
+            </ul>
+          </div>
+        </div>
+        <div
+          class="d-flex position-relative certificate"
+        >
+          <img
+            src="images/Cert_WEB.png"
+            alt="chung-chi-giai-thuong"
+            class=""
+          />
+          <div>
+            <h6>
+              CHỨNG CHỈ LẬP TRÌNH DATABASE - FUNiX
+            </h6>
+            <ul class="ps-0">
+              <li>
+                Chứng chỉ thuộc chương trình CCDN
+              </li>
+              <li>GPA:</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="project"
+      class="p-5 mx-5"
+    >
+      <h2 class="section-title">Dự án</h2>
+      <div class="da d-grid gap-3 mx-auto">
+        <div class="d-flex flex-column">
+          <img
+            src="images/3.jpg"
+            alt="cv-ca-nhan"
+            class="border border-light-1"
+          />
+          <div class="p-3 border border-light-1">
+            <a href="project.html"
+              ><h6>CV CÁ NHÂN</h6></a
+            >
+          </div>
+          <div
+            class="da-1 d-grid gap-1 border border-light-1 p-3"
+          >
+            <div class="da-1-1">
+              <p class="bg-1">2023</p>
+            </div>
+            <div class="d-flex">
+              <i class="icon-user-1"></i>
+              <p>FUNiX</p>
+            </div>
+            <div class="d-flex">
+              <i class="icon-lamp"></i>
+              <p>Developer</p>
+            </div>
+          </div>
+          <div
+            class="da-2 d-grid border border-light-1 p-3"
+          >
+            <p>Mô tả</p>
+            <p>
+              - Trang Web CV cá nhân online. Gồm
+              các thông tin cá nhân cũng như kỹ
+              năng nghề nghiệp.
+            </p>
+          </div>
+          <div
+            class="da-2 d-grid border border-light-1 p-3"
+          >
+            <p>Nhiệm vụ</p>
+            <p>
+              - Phát triển code - Review code -
+              Tối ưu code - Xử lý lỗi
+            </p>
+          </div>
+          <div
+            class="da-2 da-3 d-grid border border-light-1 p-3"
+          >
+            <p>Công nghệ</p>
+            <p>- HTML, CSS</p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column">
+          <img
+            src="images/project_2.png"
+            alt="cv-ca-nhan"
+            class="border border-light-1"
+          />
+          <div class="p-3 border border-light-1">
+            <a href="project.html"
+              ><h6>
+                TRANG WEB QUẢN LÝ THÚ CƯNG
+              </h6></a
+            >
+          </div>
+          <div
+            class="da-1 d-grid gap-1 border border-light-1 p-3"
+          >
+            <div class="da-1-1">
+              <p class="bg-1">0000</p>
+            </div>
+            <div class="d-flex">
+              <i class="icon-user-1"></i>
+              <p>FUNiX</p>
+            </div>
+            <div class="d-flex">
+              <i class="icon-lamp"></i>
+              <p>Developer</p>
+            </div>
+          </div>
+          <div
+            class="da-2 da-3 d-grid border border-light-1 p-3"
+          >
+            <p>Mô tả</p>
+            <p>
+              - Ứng dụng giúp quản lý các thông
+              tin của thú cưng như: Cân nặng,
+              giống, tình trạng tiêm chủng, ...
+              Bao gồm các chức năng thêm / sửa /
+              xóa.
+            </p>
+          </div>
+          <div
+            class="da-2 d-grid border border-light-1 p-3"
+          >
+            <p>Nhiệm vụ</p>
+            <p>
+              - Phát triển code - Review code -
+              Tối ưu code - Xử lý lỗi
+            </p>
+          </div>
+          <div
+            class="da-2 da-3 d-grid border border-light-1 p-3"
+          >
+            <p>Công nghệ</p>
+            <p>- HTML, CSS, Javascript</p>
+          </div>
+        </div>
+
+        <div class="d-flex flex-column">
+          <img
+            src="images/project_3.png"
+            alt="cv-ca-nhan"
+            class="border border-light-1"
+          />
+          <div class="p-3 border border-light-1">
+            <a href="project.html"
+              ><h6>TRANG WEB XEM TIN TỨC</h6></a
+            >
+          </div>
+          <div
+            class="da-1 d-grid gap-1 border border-light-1 p-3"
+          >
+            <div class="da-1-1">
+              <p class="bg-1">0000</p>
+            </div>
+            <div class="d-flex">
+              <i class="icon-user-1"></i>
+              <p>FUNiX</p>
+            </div>
+            <div class="d-flex">
+              <i class="icon-lamp"></i>
+              <p>Developer</p>
+            </div>
+          </div>
+          <div
+            class="da-2 d-grid border border-light-1 p-3"
+          >
+            <p>Mô tả</p>
+            <p>
+              Trang Web tin tức nhiều nguồn khác
+              nhau, người dùng có thể tìm kiếm các
+              tin tức dựa theo các từ khóa.
+            </p>
+          </div>
+          <div
+            class="da-2 d-grid border border-light-1 p-3"
+          >
+            <p>Nhiệm vụ</p>
+            <p>
+              - Phát triển code - Review code -
+              Tối ưu code - Xử lý lỗi
+            </p>
+          </div>
+          <div
+            class="da-2 da-3 d-grid border border-light-1 p-3"
+          >
+            <p>Công nghệ</p>
+            <p>- HTML, CSS, Javascript</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="footer"
+      class="bg-light mx-5"
+    >
+      <div
+        class="p-5 d-flex align-items-center justify-content-center gap-4"
+      >
+        <div
+          class="d-flex align-items-center justify-content-center"
+        >
+          <i class="icon-facebook-circled"></i>
+          <p>Facebook</p>
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center"
+        >
+          <i class="icon-linkedin-circled"></i>
+          <p>Linkedin</p>
+        </div>
+        <div
+          class="d-flex align-items-center justify-content-center"
+        >
+          <i class="icon-github-circled"></i>
+          <p>Github</p>
+        </div>
+      </div>
+    </div>
+
     <script
-      async
-      src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
     ></script>
   </body>
 </html>
