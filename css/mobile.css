@@ -1,99 +1,24 @@
 @media (max-width: 768px) {
-  #banner {
-    height: 30vh;
-    background-image: linear-gradient(
-        rgba(34, 34, 34, 0.6),
-        rgba(34, 34, 34, 0.8)
-      ),
-      url(/images/1.jpg);
-    background-size: cover;
-  }
-
   #nav {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-
-  #nav div {
-    width: 100%;
-    justify-content: start !important;
-    padding-left: 3rem;
-  }
-
-  #avatar {
-    display: none;
-  }
-
-  #info {
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: start;
-  }
-
-  #background {
-    grid-template-columns: 1fr;
-    padding: 3rem 1rem !important;
-  }
-
-  #certificate {
-    padding: 3rem 1rem !important;
-  }
-
-  #certificate-div {
-    grid-template-columns: 1fr;
-    justify-items: center;
-  }
-
-  #certificate-div div {
-    width: 100%;
-  }
-
-  #certificate h2 {
-    padding: 0 2rem 2rem;
-  }
-
-  .certificate {
     display: flex;
     flex-direction: column;
-    gap: 0;
   }
 
-  .certificate:nth-child(even) div::before {
+  .certificate:nth-child(even) > div::after {
     display: none;
   }
 
-  .certificate:last-child div::after {
-    display: none;
-  }
-
-  .certificate div::after {
+  .certificate > div::before {
     content: "";
     background-color: #d6c08d;
     position: absolute;
-    bottom: -1.5rem;
-    right: -1rem;
-    width: calc(100% + 2rem);
+    bottom: 0;
+    right: 0;
+    width: calc(100%) !important;
     height: 1px;
   }
 
-  #project {
-    padding: 3rem 1rem !important;
-  }
-
-  #project h2 {
-    padding: 0 2rem 2rem;
-  }
-
-  .da {
-    grid-template-columns: 1fr;
-  }
-
-  .da-1 {
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-  }
-
-  .da-1-1 {
-    grid-row: 1/-3;
+  .certificate:last-child > div::before {
+    display: none;
   }
 }

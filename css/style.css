@@ -1,112 +1,22 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+h6 {
+  margin-bottom: 0;
 }
 
-body {
-  max-width: 1200px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto !important;
-}
-
-#banner {
-  height: 60vh;
+.bg-img {
   background-image: linear-gradient(
       rgba(34, 34, 34, 0.6),
       rgba(34, 34, 34, 0.8)
     ),
     url(/images/1.jpg);
   background-size: cover;
-}
-
-#header i {
-  color: #4dabf7;
-}
-
-#header ul {
-  list-style: none;
+  height: 40vh;
 }
 
 .bg-light-1 {
   background-color: #f1f3f5;
 }
 
-#avatar {
-  width: auto;
-}
-
-.avatar {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  width: 100px;
-  border: 5px solid #fff;
-  border-radius: 50%;
-  box-shadow: 0 0 5px rgb(0 0 0 / 25%);
-}
-
-#background {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-#interest {
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-}
-
-#interest i {
-  color: #4dabf7;
-}
-
-.job-span-1 {
-  background: #199cdb;
-  display: inline-block;
-  height: 2px;
-  margin-right: 10px;
-  width: 45px;
-}
-
-.job-span-2 {
-  background: #199cdb;
-  display: inline-block;
-  height: 1px;
-  margin-right: 10px;
-  width: 45px;
-}
-
-#certificate-div {
-  grid-template-columns: repeat(2, 1fr);
-}
-
-#certificate img {
-  max-width: 250px;
-  max-height: 125px;
-}
-
-#certificate ul {
-  list-style-type: "-  ";
-  font-size: 12px;
-  color: #868e96;
-  margin-left: 12px;
-}
-
-.da img {
-  width: 100%;
-}
-
-.da {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.da a {
-  text-decoration: none;
-  color: #000;
-}
-
-.bg-1 {
+.bg-text-1 {
   padding: 2px 10px;
   background-color: #199cdb;
   border-radius: 12px;
@@ -114,25 +24,60 @@ body {
   text-align: center;
 }
 
-.da-1 {
-  grid-template-columns: repeat(3, 1fr);
+#navbar i {
+  color: #4dabf7;
+  padding: 0.5rem;
 }
 
-.da p,
-.da h6 {
+#info ul {
+  list-style: none;
+}
+
+#info i {
+  color: #4dabf7;
+}
+
+#interest i {
+  color: #4dabf7;
+}
+
+.skill-span-1 {
+  background: #199cdb;
+  display: inline-block;
+  height: 2px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.skill-span-2 {
+  background: #199cdb;
+  display: inline-block;
+  height: 1px;
+  margin-right: 10px;
+  width: 45px;
+}
+
+.certificate:nth-child(even) > div::after {
+  content: "";
+  background-color: #d6c08d;
+  position: absolute;
+  left: 0;
+  width: 1px;
+  height: 100%;
+}
+
+.certificate:nth-child(even) > div::before {
+  content: "";
+  background-color: #d6c08d;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: calc(200%);
+  height: 1px;
+}
+
+.project-card p {
   margin-bottom: 0;
-}
-
-.da-2 {
-  grid-template-columns: 1fr 3fr;
-}
-
-.da-3 {
-  flex-grow: 1;
-}
-
-#footer div {
-  height: 64px;
 }
 
 #footer i {

@@ -1,28 +1,52 @@
 @media (min-width: 992px) {
-  .certificate {
-    gap: 1.5rem;
+  #nav {
+    display: flex;
+    justify-content: center;
   }
 
-  .certificate:nth-child(even) div::before {
-    content: "";
-    background-color: #d6c08d;
-    position: absolute;
-    left: -1.5rem;
-    width: 1px;
-    height: 100%;
+  #nav-img {
+    width: 15%;
   }
 
-  .certificate:nth-child(even) div::after {
-    content: "";
-    background-color: #d6c08d;
-    position: absolute;
-    bottom: -1.5rem;
-    right: 0;
-    width: calc(200% + 3rem);
-    height: 1px;
+  #avatar {
+    width: 100px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 0 5px rgb(0 0 0 / 25%);
   }
 
-  .da {
-    grid-template-columns: repeat(3, 1fr);
+  /* Projcet */
+  #main {
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  #goal {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  #scope {
+    grid-column: 1/2;
+    grid-row: 2/3;
+  }
+
+  #team {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  #primary {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  #timeline {
+    grid-column: 3/4;
+    grid-row: 1/-1;
+  }
+
+  .icon {
+    width: 3.5rem;
   }
 }
